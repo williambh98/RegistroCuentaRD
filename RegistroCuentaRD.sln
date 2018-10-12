@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistroCuentaRD", "RegistroCuentaRD\RegistroCuentaRD.csproj", "{ECB67CDF-4713-4996-966E-804B7DD13AFB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistroCuentaRDTests", "RegistroCuentaRDTests\RegistroCuentaRDTests.csproj", "{C856910E-C638-4EE0-A1B3-C6C90F209DEB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{ECB67CDF-4713-4996-966E-804B7DD13AFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECB67CDF-4713-4996-966E-804B7DD13AFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECB67CDF-4713-4996-966E-804B7DD13AFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C856910E-C638-4EE0-A1B3-C6C90F209DEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C856910E-C638-4EE0-A1B3-C6C90F209DEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C856910E-C638-4EE0-A1B3-C6C90F209DEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C856910E-C638-4EE0-A1B3-C6C90F209DEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
