@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace RegistroCuentaRD
+namespace RegistroCuentaRD.UI
 {
-    public partial class Form1 : Form
+    public partial class Presupuest : Form
     {
-        public Form1()
+        public Presupuest()
         {
             InitializeComponent();
         }

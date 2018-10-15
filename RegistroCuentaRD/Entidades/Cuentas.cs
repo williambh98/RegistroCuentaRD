@@ -14,6 +14,7 @@ namespace RegistroCuentaRD.Entidades
        public string Descripcion { get; set; }
        public int Tipoid { get; set; }
        public float Monto { get; set; }
+  
 
         public Cuentas()
         {
@@ -22,7 +23,5 @@ namespace RegistroCuentaRD.Entidades
             Tipoid = 0;
             Monto = 0;
         }
-
-
     }
 }
