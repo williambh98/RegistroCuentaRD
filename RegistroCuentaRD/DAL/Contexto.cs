@@ -12,7 +12,6 @@ namespace RegistroCuentaRD.DAL
     {
         public DbSet<Cuentas> Cuentas { get; set; }
         public DbSet<Presupuesto> Presupuestos { get; set; }
-     
         public DbSet<TiposCuentas> TCuentas { get; set; }
 
         public Contexto() : base("ConStr")

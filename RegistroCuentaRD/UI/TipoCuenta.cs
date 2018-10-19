@@ -54,8 +54,6 @@ namespace RegistroCuentaRD.UI
 
                 errorProvider1.SetError(DescripciontextBox, "Expacio en blanco");
             paso = false;
-
-
             return paso;
         }
 
@@ -84,7 +82,7 @@ namespace RegistroCuentaRD.UI
             {
                 if (!ExiteEnlaDB())
                 {
-                    MessageBox.Show("no exite ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("No exite ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
@@ -92,11 +90,11 @@ namespace RegistroCuentaRD.UI
             }
             if (paso)
             {
-                MessageBox.Show("Guardo Correctamente!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Guardado!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Limpiar();
             }
             else
-                MessageBox.Show(" no Guardo !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(" No Guardo !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
 
         }
@@ -108,7 +106,7 @@ namespace RegistroCuentaRD.UI
             int.TryParse(IDnumericUpDown.Text, out id);
             if (!ExiteEnlaDB())
             {
-                errorProvider1.SetError(IDnumericUpDown, "No exite");
+                errorProvider1.SetError(IDnumericUpDown, "No encontrado");
                 IDnumericUpDown.Focus();
                 return;
             }
@@ -139,7 +137,7 @@ namespace RegistroCuentaRD.UI
             }
             else
             {
-                MessageBox.Show("No Exite!!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("No encontrado!!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
 

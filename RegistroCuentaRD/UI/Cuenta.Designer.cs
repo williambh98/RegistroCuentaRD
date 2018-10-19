@@ -35,13 +35,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.TipoIDnumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.DescripciontextBox = new System.Windows.Forms.TextBox();
             this.MontonumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.Buscar = new System.Windows.Forms.Button();
-            this.Nuevo = new System.Windows.Forms.Button();
-            this.Guardar = new System.Windows.Forms.Button();
-            this.Eliminar = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.Eliminar = new System.Windows.Forms.Button();
+            this.Guardar = new System.Windows.Forms.Button();
+            this.Nuevo = new System.Windows.Forms.Button();
+            this.Buscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.IDnumericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TipoIDnumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MontonumericUpDown)).BeginInit();
@@ -98,63 +98,72 @@
             this.TipoIDnumericUpDown.Size = new System.Drawing.Size(220, 22);
             this.TipoIDnumericUpDown.TabIndex = 5;
             // 
-            // textBox1
+            // DescripciontextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(150, 150);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(220, 22);
-            this.textBox1.TabIndex = 6;
+            this.DescripciontextBox.Location = new System.Drawing.Point(150, 150);
+            this.DescripciontextBox.Name = "DescripciontextBox";
+            this.DescripciontextBox.Size = new System.Drawing.Size(220, 22);
+            this.DescripciontextBox.TabIndex = 6;
             // 
             // MontonumericUpDown
             // 
+            this.MontonumericUpDown.DecimalPlaces = 2;
             this.MontonumericUpDown.Location = new System.Drawing.Point(150, 197);
             this.MontonumericUpDown.Name = "MontonumericUpDown";
             this.MontonumericUpDown.Size = new System.Drawing.Size(220, 22);
             this.MontonumericUpDown.TabIndex = 7;
             // 
-            // Buscar
-            // 
-            this.Buscar.Location = new System.Drawing.Point(304, 56);
-            this.Buscar.Name = "Buscar";
-            this.Buscar.Size = new System.Drawing.Size(75, 28);
-            this.Buscar.TabIndex = 8;
-            this.Buscar.Text = "Buscar";
-            this.Buscar.UseVisualStyleBackColor = true;
-            this.Buscar.Click += new System.EventHandler(this.Buscar_Click);
-            // 
-            // Nuevo
-            // 
-            this.Nuevo.Location = new System.Drawing.Point(61, 274);
-            this.Nuevo.Name = "Nuevo";
-            this.Nuevo.Size = new System.Drawing.Size(75, 47);
-            this.Nuevo.TabIndex = 9;
-            this.Nuevo.Text = "Nuevo";
-            this.Nuevo.UseVisualStyleBackColor = true;
-            this.Nuevo.Click += new System.EventHandler(this.Nuevo_Click);
-            // 
-            // Guardar
-            // 
-            this.Guardar.Location = new System.Drawing.Point(183, 274);
-            this.Guardar.Name = "Guardar";
-            this.Guardar.Size = new System.Drawing.Size(75, 47);
-            this.Guardar.TabIndex = 10;
-            this.Guardar.Text = "Guardar";
-            this.Guardar.UseVisualStyleBackColor = true;
-            this.Guardar.Click += new System.EventHandler(this.Guardar_Click);
-            // 
-            // Eliminar
-            // 
-            this.Eliminar.Location = new System.Drawing.Point(295, 274);
-            this.Eliminar.Name = "Eliminar";
-            this.Eliminar.Size = new System.Drawing.Size(75, 47);
-            this.Eliminar.TabIndex = 11;
-            this.Eliminar.Text = "Eliminar";
-            this.Eliminar.UseVisualStyleBackColor = true;
-            this.Eliminar.Click += new System.EventHandler(this.Eliminar_Click);
-            // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
+            // 
+            // Eliminar
+            // 
+            this.Eliminar.Image = global::RegistroCuentaRD.Properties.Resources.Eliminar;
+            this.Eliminar.Location = new System.Drawing.Point(295, 274);
+            this.Eliminar.Name = "Eliminar";
+            this.Eliminar.Size = new System.Drawing.Size(75, 76);
+            this.Eliminar.TabIndex = 11;
+            this.Eliminar.Text = "Eliminar";
+            this.Eliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.Eliminar.UseVisualStyleBackColor = true;
+            this.Eliminar.Click += new System.EventHandler(this.Eliminar_Click);
+            // 
+            // Guardar
+            // 
+            this.Guardar.Image = global::RegistroCuentaRD.Properties.Resources.icons8_guardar_48;
+            this.Guardar.Location = new System.Drawing.Point(183, 274);
+            this.Guardar.Name = "Guardar";
+            this.Guardar.Size = new System.Drawing.Size(75, 76);
+            this.Guardar.TabIndex = 10;
+            this.Guardar.Text = "Guardar";
+            this.Guardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.Guardar.UseVisualStyleBackColor = true;
+            this.Guardar.Click += new System.EventHandler(this.Guardar_Click);
+            // 
+            // Nuevo
+            // 
+            this.Nuevo.Image = global::RegistroCuentaRD.Properties.Resources.icons8_nuevo_48;
+            this.Nuevo.Location = new System.Drawing.Point(61, 274);
+            this.Nuevo.Name = "Nuevo";
+            this.Nuevo.Size = new System.Drawing.Size(75, 76);
+            this.Nuevo.TabIndex = 9;
+            this.Nuevo.Text = "Nuevo";
+            this.Nuevo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.Nuevo.UseVisualStyleBackColor = true;
+            this.Nuevo.Click += new System.EventHandler(this.Nuevo_Click);
+            // 
+            // Buscar
+            // 
+            this.Buscar.Image = global::RegistroCuentaRD.Properties.Resources.Buscar;
+            this.Buscar.Location = new System.Drawing.Point(277, 47);
+            this.Buscar.Name = "Buscar";
+            this.Buscar.Size = new System.Drawing.Size(93, 44);
+            this.Buscar.TabIndex = 8;
+            this.Buscar.Text = "Buscar";
+            this.Buscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Buscar.UseVisualStyleBackColor = true;
+            this.Buscar.Click += new System.EventHandler(this.Buscar_Click);
             // 
             // Cuenta
             // 
@@ -166,7 +175,7 @@
             this.Controls.Add(this.Nuevo);
             this.Controls.Add(this.Buscar);
             this.Controls.Add(this.MontonumericUpDown);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.DescripciontextBox);
             this.Controls.Add(this.TipoIDnumericUpDown);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -192,7 +201,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.NumericUpDown TipoIDnumericUpDown;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox DescripciontextBox;
         private System.Windows.Forms.NumericUpDown MontonumericUpDown;
         private System.Windows.Forms.Button Buscar;
         private System.Windows.Forms.Button Nuevo;

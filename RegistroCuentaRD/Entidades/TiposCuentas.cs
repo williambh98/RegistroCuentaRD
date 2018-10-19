@@ -9,7 +9,7 @@ namespace RegistroCuentaRD.Entidades
 {
     public class TiposCuentas
     {
-        [Key]
+    [Key]
     public int TipoID { get; set; }
     public string  Descripcion { get; set; }
 

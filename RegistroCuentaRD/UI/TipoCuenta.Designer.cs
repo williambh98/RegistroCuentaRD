@@ -76,41 +76,50 @@
             // 
             // Buscarbutton
             // 
+            this.Buscarbutton.Image = global::RegistroCuentaRD.Properties.Resources.Buscar;
             this.Buscarbutton.Location = new System.Drawing.Point(272, 12);
             this.Buscarbutton.Name = "Buscarbutton";
             this.Buscarbutton.Size = new System.Drawing.Size(75, 66);
             this.Buscarbutton.TabIndex = 4;
             this.Buscarbutton.Text = "Buscar";
+            this.Buscarbutton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.Buscarbutton.UseCompatibleTextRendering = true;
             this.Buscarbutton.UseVisualStyleBackColor = true;
             this.Buscarbutton.Click += new System.EventHandler(this.Buscarbutton_Click);
             // 
             // Nuevobutton
             // 
+            this.Nuevobutton.Image = global::RegistroCuentaRD.Properties.Resources.icons8_nuevo_48;
             this.Nuevobutton.Location = new System.Drawing.Point(19, 162);
             this.Nuevobutton.Name = "Nuevobutton";
             this.Nuevobutton.Size = new System.Drawing.Size(75, 66);
             this.Nuevobutton.TabIndex = 5;
             this.Nuevobutton.Text = "Nuevo";
+            this.Nuevobutton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.Nuevobutton.UseVisualStyleBackColor = true;
             this.Nuevobutton.Click += new System.EventHandler(this.Nuevobutton_Click);
             // 
             // Guardarbutton
             // 
+            this.Guardarbutton.Image = global::RegistroCuentaRD.Properties.Resources.icons8_guardar_48;
             this.Guardarbutton.Location = new System.Drawing.Point(146, 161);
             this.Guardarbutton.Name = "Guardarbutton";
             this.Guardarbutton.Size = new System.Drawing.Size(75, 66);
             this.Guardarbutton.TabIndex = 6;
             this.Guardarbutton.Text = "Guardar";
+            this.Guardarbutton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.Guardarbutton.UseVisualStyleBackColor = true;
             this.Guardarbutton.Click += new System.EventHandler(this.Guardarbutton_Click);
             // 
             // button4
             // 
+            this.button4.Image = global::RegistroCuentaRD.Properties.Resources.Eliminar;
             this.button4.Location = new System.Drawing.Point(272, 162);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 67);
             this.button4.TabIndex = 7;
             this.button4.Text = "Eliminar";
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 

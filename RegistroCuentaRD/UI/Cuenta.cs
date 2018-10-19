@@ -23,15 +23,15 @@ namespace RegistroCuentaRD.UI
         public void Limpiar()
         {
             IDnumericUpDown1.Value = 0;
-            textBox1.Text = string.Empty;
+            DescripciontextBox.Text = string.Empty;
             MontonumericUpDown.Value = 0;
         }
         public Cuentas Llenaclase()
         {
             Cuentas cuentas = new Cuentas();
             cuentas.CuentaID = Convert.ToInt32(IDnumericUpDown1.Value);
-            cuentas.Descripcion =textBox1.Text;
-            cuentas.Monto = Convert.ToSingle(MontonumericUpDown.Value);
+            cuentas.Descripcion =DescripciontextBox.Text;
+            cuentas.Monto = Convert.ToDouble(MontonumericUpDown.Value);
 
             return cuentas;
         }
@@ -40,7 +40,7 @@ namespace RegistroCuentaRD.UI
         public void LlenarCampo(Cuentas cuentas)
         {
             IDnumericUpDown1.Value = cuentas.CuentaID;
-            textBox1.Text = cuentas.Descripcion;
+            DescripciontextBox.Text = cuentas.Descripcion;
             MontonumericUpDown.Value = Convert.ToDecimal(cuentas.Monto);
         }
 
@@ -55,14 +55,14 @@ namespace RegistroCuentaRD.UI
         public bool GValidar()
         {
             bool paso = true;
-            if (string.IsNullOrWhiteSpace(textBox1.Text))
+            if (string.IsNullOrWhiteSpace(DescripciontextBox.Text))
             {
-                errorProvider1.SetError(textBox1, "Campo vacio por por favor digite el dato");
+                errorProvider1.SetError(DescripciontextBox, "Campo vacio por por favor digite el dato");
                 paso = false;
             }
             if (MontonumericUpDown.Value == 0)
             {
-                errorProvider1.SetError(MontonumericUpDown, "Valor esta en 0");
+                errorProvider1.SetError(MontonumericUpDown, "Llenar campo");
                 paso = false;
             }
             return paso;
@@ -139,7 +139,7 @@ namespace RegistroCuentaRD.UI
                 LlenarCampo(cuentas);
             }
             else
-                MessageBox.Show("no exite");
+                MessageBox.Show("No encontrado");
         }
     }
 }
