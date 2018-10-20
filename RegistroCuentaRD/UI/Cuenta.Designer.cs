@@ -42,6 +42,7 @@
             this.Guardar = new System.Windows.Forms.Button();
             this.Nuevo = new System.Windows.Forms.Button();
             this.Buscar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.IDnumericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TipoIDnumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MontonumericUpDown)).BeginInit();
@@ -120,7 +121,7 @@
             // Eliminar
             // 
             this.Eliminar.Image = global::RegistroCuentaRD.Properties.Resources.Eliminar;
-            this.Eliminar.Location = new System.Drawing.Point(295, 274);
+            this.Eliminar.Location = new System.Drawing.Point(268, 274);
             this.Eliminar.Name = "Eliminar";
             this.Eliminar.Size = new System.Drawing.Size(75, 76);
             this.Eliminar.TabIndex = 11;
@@ -132,7 +133,7 @@
             // Guardar
             // 
             this.Guardar.Image = global::RegistroCuentaRD.Properties.Resources.icons8_guardar_48;
-            this.Guardar.Location = new System.Drawing.Point(183, 274);
+            this.Guardar.Location = new System.Drawing.Point(163, 274);
             this.Guardar.Name = "Guardar";
             this.Guardar.Size = new System.Drawing.Size(75, 76);
             this.Guardar.TabIndex = 10;
@@ -165,11 +166,22 @@
             this.Buscar.UseVisualStyleBackColor = true;
             this.Buscar.Click += new System.EventHandler(this.Buscar_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(362, 274);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 76);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Tipo de cuenta";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Cuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(457, 378);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Eliminar);
             this.Controls.Add(this.Guardar);
             this.Controls.Add(this.Nuevo);
@@ -208,5 +220,6 @@
         private System.Windows.Forms.Button Guardar;
         private System.Windows.Forms.Button Eliminar;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Button button1;
     }
 }

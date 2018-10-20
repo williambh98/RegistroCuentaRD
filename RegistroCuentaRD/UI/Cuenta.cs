@@ -141,5 +141,12 @@ namespace RegistroCuentaRD.UI
             else
                 MessageBox.Show("No encontrado");
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TipoCuenta tp = new TipoCuenta();
+            tp.Show();
+
+        }
     }
 }

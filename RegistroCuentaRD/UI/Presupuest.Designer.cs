@@ -38,15 +38,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.FechadateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.TipoCuentascomboBox = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Agragar = new System.Windows.Forms.Button();
+            this.TipoCuentascomboBox = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.Eliminarbutton = new System.Windows.Forms.Button();
             this.Guardar = new System.Windows.Forms.Button();
             this.Nuevobutton = new System.Windows.Forms.Button();
-            this.Agragar = new System.Windows.Forms.Button();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.Buscarbutton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.IDnumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MontonumericUpDown)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -122,6 +123,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Controls.Add(this.Agragar);
             this.groupBox1.Controls.Add(this.TipoCuentascomboBox);
@@ -133,14 +135,24 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tipos de Cuentas";
             // 
-            // label4
+            // dataGridView1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 34);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(114, 17);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Tipo De Cuentas";
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(6, 64);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(475, 161);
+            this.dataGridView1.TabIndex = 3;
+            // 
+            // Agragar
+            // 
+            this.Agragar.Location = new System.Drawing.Point(371, 18);
+            this.Agragar.Name = "Agragar";
+            this.Agragar.Size = new System.Drawing.Size(94, 40);
+            this.Agragar.TabIndex = 2;
+            this.Agragar.Text = "Agragar";
+            this.Agragar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Agragar.UseVisualStyleBackColor = true;
             // 
             // TipoCuentascomboBox
             // 
@@ -150,14 +162,14 @@
             this.TipoCuentascomboBox.Size = new System.Drawing.Size(161, 24);
             this.TipoCuentascomboBox.TabIndex = 1;
             // 
-            // dataGridView1
+            // label4
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 64);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(453, 161);
-            this.dataGridView1.TabIndex = 3;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 34);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(114, 17);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Tipo De Cuentas";
             // 
             // Eliminarbutton
             // 
@@ -190,17 +202,6 @@
             this.Nuevobutton.UseVisualStyleBackColor = true;
             this.Nuevobutton.Click += new System.EventHandler(this.Nuevobutton_Click);
             // 
-            // Agragar
-            // 
-            this.Agragar.Image = global::RegistroCuentaRD.Properties.Resources.New;
-            this.Agragar.Location = new System.Drawing.Point(312, 21);
-            this.Agragar.Name = "Agragar";
-            this.Agragar.Size = new System.Drawing.Size(110, 37);
-            this.Agragar.TabIndex = 2;
-            this.Agragar.Text = "Agragar";
-            this.Agragar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Agragar.UseVisualStyleBackColor = true;
-            // 
             // errorProvider
             // 
             this.errorProvider.ContainerControl = this;
@@ -216,6 +217,16 @@
             this.Buscarbutton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Buscarbutton.UseVisualStyleBackColor = true;
             this.Buscarbutton.Click += new System.EventHandler(this.Buscarbutton_Click);
+            // 
+            // button1
+            // 
+            this.button1.Image = global::RegistroCuentaRD.Properties.Resources.New;
+            this.button1.Location = new System.Drawing.Point(294, 22);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(71, 36);
+            this.button1.TabIndex = 4;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Presupuest
             // 
@@ -268,5 +279,6 @@
         private System.Windows.Forms.Button Eliminarbutton;
         private System.Windows.Forms.ErrorProvider errorProvider;
         private System.Windows.Forms.Button Buscarbutton;
+        private System.Windows.Forms.Button button1;
     }
 }

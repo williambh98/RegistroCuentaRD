@@ -21,9 +21,10 @@ namespace RegistroCuentaRD
 
         private void cuentasToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Cuenta ct = new Cuenta();
-            ct.MdiParent = this;
+            Presupuest ct = new Presupuest();
             ct.Show();
+            ct.MdiParent = this;
+            
         }
 
         private void Main_Load(object sender, EventArgs e)

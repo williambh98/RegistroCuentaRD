@@ -78,7 +78,7 @@ namespace RegistroCuentaRD.UI
             }
             if (MontonumericUpDown.Value == 0)
             {
-                errorProvider.SetError(MontonumericUpDown, "El valor tiene que mayor a cero");
+                errorProvider.SetError(MontonumericUpDown, "El valor tiene que ser mayor a cero");
                 paso = false;
 
             }
@@ -164,6 +164,11 @@ namespace RegistroCuentaRD.UI
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Cuenta ct = new Cuenta();
+            ct.Show();
+        }
     }
     }
-}
+
