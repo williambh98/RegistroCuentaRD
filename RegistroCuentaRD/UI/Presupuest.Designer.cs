@@ -38,7 +38,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.FechadateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.CuentadataGridView = new System.Windows.Forms.DataGridView();
             this.Agragar = new System.Windows.Forms.Button();
             this.TipoCuentascomboBox = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -47,11 +48,10 @@
             this.Nuevobutton = new System.Windows.Forms.Button();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.Buscarbutton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.IDnumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MontonumericUpDown)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CuentadataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
@@ -124,7 +124,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.CuentadataGridView);
             this.groupBox1.Controls.Add(this.Agragar);
             this.groupBox1.Controls.Add(this.TipoCuentascomboBox);
             this.groupBox1.Controls.Add(this.label4);
@@ -135,14 +135,24 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tipos de Cuentas";
             // 
-            // dataGridView1
+            // button1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 64);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(475, 161);
-            this.dataGridView1.TabIndex = 3;
+            this.button1.Image = global::RegistroCuentaRD.Properties.Resources.New;
+            this.button1.Location = new System.Drawing.Point(294, 22);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(71, 36);
+            this.button1.TabIndex = 4;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // CuentadataGridView
+            // 
+            this.CuentadataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.CuentadataGridView.Location = new System.Drawing.Point(6, 64);
+            this.CuentadataGridView.Name = "CuentadataGridView";
+            this.CuentadataGridView.RowTemplate.Height = 24;
+            this.CuentadataGridView.Size = new System.Drawing.Size(475, 161);
+            this.CuentadataGridView.TabIndex = 3;
             // 
             // Agragar
             // 
@@ -153,9 +163,11 @@
             this.Agragar.Text = "Agragar";
             this.Agragar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Agragar.UseVisualStyleBackColor = true;
+            this.Agragar.Click += new System.EventHandler(this.Agragar_Click);
             // 
             // TipoCuentascomboBox
             // 
+            this.TipoCuentascomboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.TipoCuentascomboBox.FormattingEnabled = true;
             this.TipoCuentascomboBox.Location = new System.Drawing.Point(126, 31);
             this.TipoCuentascomboBox.Name = "TipoCuentascomboBox";
@@ -218,16 +230,6 @@
             this.Buscarbutton.UseVisualStyleBackColor = true;
             this.Buscarbutton.Click += new System.EventHandler(this.Buscarbutton_Click);
             // 
-            // button1
-            // 
-            this.button1.Image = global::RegistroCuentaRD.Properties.Resources.New;
-            this.button1.Location = new System.Drawing.Point(294, 22);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(71, 36);
-            this.button1.TabIndex = 4;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Presupuest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -252,7 +254,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.MontonumericUpDown)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CuentadataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -270,7 +272,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker FechadateTimePicker;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView CuentadataGridView;
         private System.Windows.Forms.Button Agragar;
         private System.Windows.Forms.ComboBox TipoCuentascomboBox;
         private System.Windows.Forms.Label label4;

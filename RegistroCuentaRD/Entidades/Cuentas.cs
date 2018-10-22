@@ -12,7 +12,7 @@ namespace RegistroCuentaRD.Entidades
        [Key]
        public int CuentaID { get; set; }
        public string Descripcion { get; set; }
-       //public int Tipoid { get; set; }
+       public int Tipoid { get; set; }
        public double Monto { get; set; }
   
 
@@ -20,8 +20,17 @@ namespace RegistroCuentaRD.Entidades
         {
             CuentaID = 0;
             Descripcion = string.Empty;
-            //Tipoid = 0;
+            Tipoid = 0;
             Monto = 0;
+        }
+
+        public Cuentas(int CuentaID, string Descripcion,int Tipoid , double Monto)
+        {
+            CuentaID = 0;
+            Descripcion = string.Empty;
+            Tipoid = 0;
+            Monto = 0;
+
         }
     }
 }

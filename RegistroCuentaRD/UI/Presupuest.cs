@@ -15,10 +15,12 @@ namespace RegistroCuentaRD.UI
     public partial class Presupuest : Form
     {
         RepositorioBase<Presupuesto> repositorio;
+        public List<Cuentas>Detalle { get; set; }
         public static int Pas = 0;
         public Presupuest()
         {
             InitializeComponent();
+            this.Detalle = new List<Cuentas>();
             LlenarComboBox();
         }
 
@@ -43,6 +45,8 @@ namespace RegistroCuentaRD.UI
             IDnumericUpDown.Value = presupuesto.Presupuestoid;
             DescripciontextBox.Text = presupuesto.Descripcion;
             MontonumericUpDown.Value = Convert.ToDecimal(presupuesto.Monto);
+            this.Detalle = presupuesto.cuentas;
+            CargarGrid();
         }
 
         private Presupuesto LlenaClase()
@@ -54,6 +58,7 @@ namespace RegistroCuentaRD.UI
                 Monto = Convert.ToSingle(MontonumericUpDown.Value),
                 Fecha = FechadateTimePicker.Value
             };
+            presupueso.cuentas = this.Detalle;
             return presupueso;
         }
 
@@ -168,6 +173,31 @@ namespace RegistroCuentaRD.UI
         {
             Cuenta ct = new Cuenta();
             ct.Show();
+        }
+        private void CargarGrid()
+        {
+            CuentadataGridView.DataSource = null;
+            CuentadataGridView.DataSource = this.Detalle;
+        }
+        private void Agragar_Click(object sender, EventArgs e)
+        {
+            if (CuentadataGridView.DataSource != null)
+            {
+                this.Detalle = (List<Cuentas>)CuentadataGridView.DataSource;
+            }
+            this.Detalle.Add(
+                new Cuentas
+                (
+              CuentaID: 0,
+              Descripcion: TipoCuentascomboBox.Text,
+              Tipoid: (int)IDnumericUpDown.Value,
+              Monto: (double)MontonumericUpDown.Value
+
+                )
+                );
+            CargarGrid();
+            DescripciontextBox.Focus();
+            DescripciontextBox.Clear();
         }
     }
     }

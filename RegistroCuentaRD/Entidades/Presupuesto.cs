@@ -15,12 +15,17 @@ namespace RegistroCuentaRD.Entidades
         public float Monto { get; set; }
         public DateTime Fecha { get; set; }
 
+
+        public virtual List<Cuentas> cuentas {get; set;}
+
         public Presupuesto()
         {
             Presupuestoid = 0;
             Descripcion = string.Empty;
             Monto = 0;
             Fecha = DateTime.Now;
+
+            cuentas = new List<Cuentas>();
         }
 
     }
